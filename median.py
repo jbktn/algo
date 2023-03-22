@@ -1,6 +1,5 @@
 import bisect
 
-
 def runningMedian(arr):
     l = len(arr)
     if l % 2 == 0:
@@ -10,7 +9,8 @@ def runningMedian(arr):
         x = int(l / 2)
         return arr[x]
 
-if __name__ == '__main__':
+
+    if __name__ == '__main__':
     n = int(input().strip())
     a = []
     for i in range(n):
