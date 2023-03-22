@@ -1,8 +1,3 @@
-import math
-import os
-import random
-import re
-import sys
 import bisect
 
 
@@ -20,7 +15,5 @@ if __name__ == '__main__':
     a = []
     for i in range(n):
         a_item = int(input().strip())
-        for i in range(len(a) - 1):
-            if a[i] < a_item < a[i + 1]:
-                a.insert(i + 1, a_item)
+        bisect.insort(a, a_item)    
         print(float(runningMedian(a)))
