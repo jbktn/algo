@@ -1,10 +1,3 @@
-import math
-import os
-import random
-import re
-import sys
-
-
 def insertionsort1(n, arr):
     for i in range(1, n):
         h = arr[i]
@@ -18,11 +11,6 @@ def insertionsort1(n, arr):
 
 
 if __name__ == '__main__':
-    '''n = int(input().strip())
-
-    arr = list(map(int, input().rstrip().split()))'''
-
-    n = 5
-    arr = [2, 4, 6, 8, 3]
-
+    n = int(input().strip())
+    arr = list(map(int, input().rstrip().split()))
     insertionsort1(n, arr)
