@@ -1,10 +1,3 @@
-import math
-import os
-import random
-import re
-import sys
-
-
 def insertionSort2(n, arr):
     for i in range(1, n):
         for j in range(i):
@@ -14,12 +7,6 @@ def insertionSort2(n, arr):
 
 
 if __name__ == '__main__':
-    '''n = int(input().strip())
-
-    arr = list(map(int, input().rstrip().split()))'''
-
-    n = 6
-
-    arr = [1, 4, 3, 5, 6, 2]
-
+    n = int(input().strip())
+    arr = list(map(int, input().rstrip().split()))
     insertionSort2(n, arr)
